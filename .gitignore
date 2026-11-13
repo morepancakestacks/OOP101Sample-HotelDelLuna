@@ -1,0 +1,10 @@
+# Compiled Java files
+*.class
+
+# Compiled output directory
+out/
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.sublime-workspace

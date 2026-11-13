@@ -1,0 +1,30 @@
+public class ConferenceHall implements Bookable {
+
+    private String hallName;
+    private boolean isBooked;
+
+    public ConferenceHall(String hallName) {
+        this.hallName = hallName;
+        this.isBooked = false;
+    }
+
+    @Override
+    public void bookRoom() {
+        if (!isBooked) {
+            isBooked = true;
+            System.out.println(hallName + " successfully booked!");
+        } else {
+            System.out.println(hallName + " is already booked.");
+        }
+    }
+
+    @Override
+    public void cancelBooking() {
+        if (isBooked) {
+            isBooked = false;
+            System.out.println(hallName + " booking cancelled.");
+        } else {
+            System.out.println("No active booking.");
+        }
+    }
+}
