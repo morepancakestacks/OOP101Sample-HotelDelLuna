@@ -19,23 +19,24 @@ This project models different types of hotel rooms and demonstrates how Java OOP
 
 <h2>Project Structure</h2>
 ```
-HotelManagementSystem/
-├── src/
-│   ├── Main.java
-│   ├── HotelRoom.java
-│   ├── StandardRoom.java
-│   ├── DeluxeRoom.java
-│   ├── SuiteRoom.java
-│   ├── Bookable.java
-│   ├── ConferenceHall.java
-│   ├── RoomType.java
-│   └── RoomStatus.java
-├── docs/
-│   ├── HotelManagementSystem-UML.png
-│   └── HotelManagementSystem-UML.mmd
-├── README.md
-└── .gitignore
+📂HotelManagementSystem/
+├── 📂src/
+│   ├── 📄Main.java
+│   ├── 📄HotelRoom.java
+│   ├── 📄StandardRoom.java
+│   ├── 📄DeluxeRoom.java
+│   ├── 📄SuiteRoom.java
+│   ├── 📄Bookable.java
+│   ├── 📄ConferenceHall.java
+│   ├── 📄RoomType.java
+│   └── 📄RoomStatus.java
+├── 📂docs/
+│   ├── 🖼️HotelManagementSystem-UML.png
+│   └── 📄HotelManagementSystem-UML.mmd
+├── 📜README.md
+└── 📜.gitignore
 ```
+
 <h2>Requirements</h2>
 <ul type = "cicle">
 	<li>Java Development Kit (JDK)</li>
