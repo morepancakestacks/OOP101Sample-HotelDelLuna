@@ -1,4 +1,4 @@
-public class ConferenceHall implements Bookable {
+public class ConferenceHall implements Bookable, Maintainable {
 
     private String hallName;
     private boolean isBooked;
@@ -26,5 +26,10 @@ public class ConferenceHall implements Bookable {
         } else {
             System.out.println("No active booking.");
         }
+    }
+
+    @Override
+    public void cleanRoom() {
+        System.out.println("Cleaning Conference Hall!");
     }
 }
