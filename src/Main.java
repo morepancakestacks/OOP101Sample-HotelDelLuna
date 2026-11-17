@@ -1,11 +1,15 @@
 public class Main {
     public static void main(String[] args) {
+        HotelRoom hotelRoom = new SuiteRoom(101);
+        ConferenceHall conferenceHall = new ConferenceHall("Function Room A");
 
-        Bookable item1 = new StandardRoom(101);
-        ConferenceHall item2 = new ConferenceHall("Function Hall A");
+        System.out.println("Hotel Room:");
+        hotelRoom.bookRoom(); // from Bookable
+        hotelRoom.cleanRoom(); // from Maintainable
+        hotelRoom.reviewRoom(); // from Reviewable
 
-        item1.bookRoom();
-        item2.bookRoom();
-        item2.cleanRoom();
+        System.out.println("\nConference Hall:");
+        conferenceHall.bookRoom(); // from Bookable
+        conferenceHall.cleanRoom(); // from Maintainable
     }
 }

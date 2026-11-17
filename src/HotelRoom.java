@@ -1,4 +1,4 @@
-public abstract class HotelRoom implements Bookable {
+public abstract class HotelRoom implements Bookable, Maintainable, Reviewable {
     private int roomNumber;
     private RoomType roomType;
     private double pricePerStay;
@@ -30,6 +30,16 @@ public abstract class HotelRoom implements Bookable {
         } else {
             System.out.println("No active booking to cancel.");
         }
+    }
+
+    @Override
+    public void cleanRoom() {
+        System.out.println("Cleaning the hotel room...");
+    }
+
+    @Override
+    public void reviewRoom() {
+        System.out.println("Reviewing the " + roomType + " room.");
     }
 
     public abstract void displayFeatures();
