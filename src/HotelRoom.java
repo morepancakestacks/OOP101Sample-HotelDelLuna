@@ -39,7 +39,7 @@ public abstract class HotelRoom implements Bookable, Maintainable, Reviewable {
 
     @Override
     public void reviewRoom() {
-        System.out.println("Reviewing the " + roomType + " room.");
+        System.out.println("Posting review for " + roomType + " " + roomNumber);
     }
 
     public abstract void displayFeatures();

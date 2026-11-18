@@ -1,4 +1,4 @@
-public class ConferenceHall implements Bookable, Maintainable {
+public class ConferenceHall implements Bookable, Maintainable, Reviewable {
     private String hallName;
     private boolean isBooked;
 
@@ -31,5 +31,10 @@ public class ConferenceHall implements Bookable, Maintainable {
     @Override
     public void cleanRoom() {
         System.out.println("Cleaning the conference hall...");
+    }
+
+    @Override
+    public void reviewRoom() {
+        System.out.println("Posting review for " + hallName);
     }
 }
