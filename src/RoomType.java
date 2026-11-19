@@ -1,5 +1,6 @@
 public enum RoomType {
 	STANDARD,
 	DELUXE,
-	SUITE
+	SUITE,
+	FAMILY_ROOM
 }

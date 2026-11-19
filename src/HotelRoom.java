@@ -1,19 +1,19 @@
-public abstract class HotelRoom implements Bookable, Maintainable, Reviewable {
+public class HotelRoom {
     private int roomNumber;
-    private RoomType roomType;
+    protected RoomType roomType;
     private double pricePerStay;
     private RoomStatus status;
 
     public HotelRoom(int roomNumber, RoomType roomType,
                      double pricePerStay) {
+        // System.out.println("Calling the parent constructor.");
         this.roomNumber = roomNumber;
         this.roomType = roomType;
         this.pricePerStay = pricePerStay;
         this.status = RoomStatus.AVAILABLE;
     }
 
-    @Override
-    public void bookRoom() {
+    public void checkIn() {
         if (status == RoomStatus.AVAILABLE) {
             status = RoomStatus.OCCUPIED;
             System.out.println("Room successfully booked!");
@@ -22,8 +22,7 @@ public abstract class HotelRoom implements Bookable, Maintainable, Reviewable {
         }
     }
 
-    @Override
-    public void cancelBooking() {
+    public void checkOut() {
         if (status == RoomStatus.OCCUPIED) {
             status = RoomStatus.AVAILABLE;
             System.out.println("Booking cancelled.");
@@ -32,22 +31,14 @@ public abstract class HotelRoom implements Bookable, Maintainable, Reviewable {
         }
     }
 
-    @Override
-    public void cleanRoom() {
-        System.out.println("Cleaning the hotel room...");
-    }
-
-    @Override
-    public void reviewRoom() {
-        System.out.println("Posting review for " + roomType + " " + roomNumber);
-    }
-
-    public abstract void displayFeatures();
-
     public void displayDetails() {
         System.out.println("Room Number: " + roomNumber);
         System.out.println("Room Type: " + roomType);
         System.out.println("Price per Stay: Php " + pricePerStay);
         System.out.println("Status: " + status);
+    }
+
+    public void displayFeatures() {
+        System.out.println("Generic feature of a generic HotelRoom");
     }
 }

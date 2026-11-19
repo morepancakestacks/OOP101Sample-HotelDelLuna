@@ -8,5 +8,6 @@ public class StandardRoom extends HotelRoom {
         System.out.println("Standard Room Features:");
         System.out.println("- Work Desk");
         System.out.println("- WiFi Access");
+        System.out.println("Room Type :" + roomType);
     }
 }
