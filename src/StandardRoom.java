@@ -9,4 +9,5 @@ public class StandardRoom extends HotelRoom {
         System.out.println("- Work Desk");
         System.out.println("- WiFi Access");
     }
+    
 }

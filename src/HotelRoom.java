@@ -1,4 +1,4 @@
-public abstract class HotelRoom implements Bookable {
+public abstract class HotelRoom {
     private int roomNumber;
     private RoomType roomType;
     private double pricePerStay;
@@ -11,7 +11,7 @@ public abstract class HotelRoom implements Bookable {
         this.pricePerStay = pricePerStay;
         this.status = RoomStatus.AVAILABLE;
     }
-
+/*
     @Override
     public void bookRoom() {
         if (status == RoomStatus.AVAILABLE) {
@@ -32,7 +32,9 @@ public abstract class HotelRoom implements Bookable {
         }
     }
 
+*/
     public abstract void displayFeatures();
+
 
     public void displayDetails() {
         System.out.println("Room Number: " + roomNumber);

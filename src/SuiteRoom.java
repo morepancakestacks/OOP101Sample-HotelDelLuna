@@ -9,4 +9,5 @@ public class SuiteRoom extends HotelRoom {
         System.out.println("- Living Room Area");
         System.out.println("- Multiple Bathrooms");
     }
+    
 }

@@ -9,4 +9,5 @@ public class DeluxeRoom extends HotelRoom {
         System.out.println("- Balcony");
         System.out.println("- Complimentary Breakfast");
     }
+    
 }

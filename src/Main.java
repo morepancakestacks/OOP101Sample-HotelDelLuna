@@ -1,10 +1,15 @@
 public class Main {
     public static void main(String[] args) {
+        HotelRoom standardRoom = new StandardRoom(101);
+        SuiteRoom suiteRoom = new SuiteRoom(201);
+        HotelRoom deluxeRoom = new DeluxeRoom(301);
 
-        Bookable item1 = new StandardRoom(101);
-        Bookable item2 = new ConferenceHall("Function Hall A");
-
-        item1.bookRoom();
-        item2.bookRoom();
+        standardRoom.displayFeatures();
+        standardRoom.displayDetails();
+        System.out.println();
+        suiteRoom.displayFeatures();
+        suiteRoom.displayDetails();
+        System.out.println();
+        deluxeRoom.displayFeatures();
     }
 }
