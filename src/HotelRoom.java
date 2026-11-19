@@ -6,7 +6,7 @@ public class HotelRoom {
 
     public HotelRoom(int roomNumber, RoomType roomType,
                      double pricePerStay) {
-        // System.out.println("Calling the parent constructor.");
+        System.out.println("Calling the parent constructor.");
         this.roomNumber = roomNumber;
         this.roomType = roomType;
         this.pricePerStay = pricePerStay;
